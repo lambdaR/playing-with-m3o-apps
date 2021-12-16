@@ -8,7 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		t := time.Now().String()
-		greeting := "Apps branch Zeus => " + t
+		greeting := "Apps branch Zeus Updated => " + t
 		w.Write([]byte(greeting))
 	})
 	http.ListenAndServe(":8080", nil)
